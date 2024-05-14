@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+header{
+    position: fixed;
+    padding: 2px 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* baguhin pagdikasya */
+    background-color: #c78b8b;
+
+}
+
+.logo img{
+    max-width: 150px;
+    height: 80px;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    margin: 20;
+    transition: all .42 ease;
+}
+
+
+
+
+
+.navmenu a:hover{
+    color: #EE1c47;
+}
+.navIcon{
+    display: flex;
+    align-items: center;
+}
+.navIcon i{
+    margin-right: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    z-index: 10001;
+    transition: all .42 ease;
+}
+.navIcon i:hover{
+    transform: scale(1.5);
+    color: #EE1c47;
+}
+#menuIcon{
+    font-size:35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding:  5% 10%;
+}
+.mainHome{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/picguit.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.mainText h5, .mainText p{
+    color: #EE1c47;
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.mainText h1{
+    color: #040404;
+    font-size: 130px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.mainText span{
+    color: #EE1c47;
+}
+.mainText p{
+    font-size: 30px;
+}
+.mainBtn{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42 ease;
+}
+.mainBtn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.mainBtn i{
+    vertical-align: middle;
+}
+.centerText h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.centerText span{
+    color: #EE1c47;
+}
+
+.storeProduct{
+    /*background-color: #a6a1a1;*/
+}
+.bxs-cart-add{
+    position: absolute;
+    margin-right: 20%;
+    bottom: 0;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.bxs-cart-add:hover{
+    background-color: #EE1c47;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+.alpha{
+    position: relative;
+    transition: all .40s;
+    width: 250px; 
+    height: 500px; 
+    border: 4px solid #464545;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.alpha img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.alpha:hover{
+    transition: all .40s;
+    transform: scale(1.1);
+}
+.shoppingCart{
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    right: -100%;
+    width: 300px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color:#c78b8b;
+    border: 4px solid #464545;
+    transition: 0.5s;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+}
+.shoppingCartText{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-box img{
+    width: 100%;
+    height: 100px; /*duda*/
+    object-fit: contain;
+    padding: 10px;
+}
+.cart-detailsbox{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-item-quantity{
+    border: 2px solid black;
+    outline-color:#040404;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.bxs-trash{
+    font-size: 24px;
+    color: #020202;
+    cursor: pointer;
+}
+.bxs-trash:hover{
+    color:#EE1c47;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3px;
+    border-top: solid black;
+}
+.total-price{
+    margin-left: 5px;
+}
+.btn-buy{
+    display: flex;
+    margin: 15px auto 0 auto;
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-buy:hover, #close-cart:hover{
+    background-color: #EE1c47;
+}
+#close-cart{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.shoppingCart.active{
+    right: 0;
+}
