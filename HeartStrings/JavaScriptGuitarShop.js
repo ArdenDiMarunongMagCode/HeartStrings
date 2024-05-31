@@ -144,9 +144,8 @@
             const email = document.getElementById('email').value;
             const country = document.getElementById('Country').value;
             const address = document.getElementById('Address').value;
-            const paymentMethod = document.getElementById('payment-method').value;
         
-            if (!fname || !lname || !email || !address || !country || !paymentMethod) {
+            if (!fname || !lname || !email || !address || !country) {
                 alert('Please fill in all required fields.');
                 return;
             }
