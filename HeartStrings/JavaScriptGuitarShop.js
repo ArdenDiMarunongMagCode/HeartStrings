@@ -149,7 +149,7 @@
                 alert('Please fill in all required fields.');
                 return;
             }
-            alert('Form submitted successfully!'); // temp
+            alert('Thank you for your purchase! Your order will be sent to our partners for delivery.'); // temp
             event.target.submit();
         });
 
